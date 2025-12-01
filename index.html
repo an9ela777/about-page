@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Rilakkuma Style Resume</title>
+    <!-- 引入可愛的圓體字型 -->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- 引入 FontAwesome 圖示 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 背景漂浮動畫裝飾 -->
+    <div class="bg-decoration">
+        <div class="circle c1"></div>
+        <div class="circle c2"></div>
+        <div class="circle c3"></div>
+    </div>
+
+    <!-- 導覽列 -->
+    <nav class="navbar">
+        <div class="logo">An9ela Life <i class="fas fa-paw"></i></div>
+        <ul class="nav-links">
+            <li><a href="#home">首頁</a></li>
+            <li><a href="#skills">技能</a></li>
+            <li><a href="#experience">經歷</a></li>
+            <li><a href="#portfolio">作品</a></li>
+        </ul>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- 個人資訊區塊 (Home) -->
+    <section id="home" class="hero">
+        <div class="hero-content scroll-reveal">
+            <div class="avatar-container">
+                <!-- 熊耳朵造型 CSS -->
+                <div class="bear-ear left"></div>
+                <div class="bear-ear right"></div>
+                <!-- 請替換下方的 src 為你的照片 -->
+                <img src="assets/avatar.jpg" alt="Profile Photo" class="avatar">
+            </div>
+            <h1>你好，我是 <span class="highlight">張容德</span></h1>
+            <p>懶懶大學生</p>
+            
+            <div class="social-links">
+                <!-- Email 必填 -->
+                <a href="mailto:7uilioo@gmail.com" class="btn"><i class="fas fa-envelope"></i> Email</a>
+                <!-- 其他連結 -->
+                <a href="https://github.com/an9ela777" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://www.instagram.com/iman9e1a/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 技能展示區 (Skills) -->
+    <section id="skills" class="section">
+        <h2 class="section-title scroll-reveal">My Skills <i class="fas fa-star"></i></h2>
+        <div class="skills-container scroll-reveal">
+            
+            <div class="skill-item">
+                <div class="skill-info">
+                    <span>認臉能力</span>
+                    <span>85%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 90%;"></div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <div class="skill-info">
+                    <span>社交能力</span>
+                    <span>85%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 85%;"></div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <div class="skill-info">
+                    <span>採買能力</span>
+                    <span>100%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 75%;"></div>
+                </div>
+            </div>
+
+             <!-- 趣味技能 -->
+             <div class="skill-item">
+                <div class="skill-info">
+                    <span>吃點心</span>
+                    <span>100%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 100%; background-color: #f4a640;"></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 工作／經歷時間軸 (Experience) -->
+    <section id="experience" class="section alt-bg">
+        <h2 class="section-title scroll-reveal">Experience <i class="fas fa-history"></i></h2>
+        <div class="timeline scroll-reveal">
+            
+            <!-- 經歷 1 -->
+            <div class="timeline-item left">
+                <div class="content">
+                    <h3>大學時期</h3>
+                    <span class="date">2025 - now</span>
+                    <p>微積分大師<br>負責教導同學微積分，並獲得了104分的好成績。</p>
+                </div>
+            </div>
+
+            <!-- 經歷 2 -->
+            <div class="timeline-item right">
+                <div class="content">
+                    <h3>高中時期</h3>
+                    <span class="date">2022 - 2025</span>
+                    <p>熱音社 美宣<br>負責社團成發海報設計。</p>
+                </div>
+            </div>
+
+            <!-- 經歷 3 -->
+            <div class="timeline-item left">
+                <div class="content">
+                    <h3>國中時期</h3>
+                    <span class="date">2019 - 2022</span>
+                    <p>當個小廢物<br>獲得廢物比賽第一名。</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 專案作品集展示 (Portfolio) -->
+    <section id="portfolio" class="section">
+        <h2 class="section-title scroll-reveal">Portfolio <i class="fas fa-paint-brush"></i></h2>
+        <div class="portfolio-grid">
+            
+            <!-- 作品 1 -->
+            <div class="card scroll-reveal">
+                <div class="card-img" style="background-image: url('assets/portfolio1.webp');"></div>
+                <div class="card-content">
+                    <h3>高一自主學習計劃書</h3>
+                    <span class="role">10809張容德</span>
+                    <p>高一自主學習計劃內容。學習Python程式，為未來跨領域應用設計奠定實力。</p>
+                    <a href="https://www.canva.com/design/DAGkTgdtwjo/j4I6eVt3KI39JARdJHQ1mQ/edit" class="btn-sm">查看詳情</a>
+                </div>
+            </div>
+
+            <!-- 作品 2 -->
+            <div class="card scroll-reveal">
+                <div class="card-img" style="background-image: url('assets/portfolio2.png');"></div>
+                <div class="card-content">
+                    <h3>基因突變模擬器</h3>
+                    <span class="role">10809張容德</span>
+                    <p>醫學與資訊結合，設計RNA序列突變的小程式，提升大眾對基因、突變疾病的認識。</p>
+                    <a href="https://www.canva.com/design/DAGiO2LlJWE/2doYBjoAA2W5L0wrtXWpiQ/edit" class="btn-sm">查看詳情</a>
+                </div>
+            </div>
+
+            <!-- 作品 3 -->
+            <div class="card scroll-reveal">
+                <div class="card-img" style="background-image: url('assets/portfolio3.jpg');"></div>
+                <div class="card-content">
+                    <h3>新店熱樂31屆 頭貼設計</h3>
+                    <span class="role">角色：繪師</span>
+                    <p>高中社團頭貼設計。希望我們的社團可以像蝴蝶一樣展翅高飛。</p>
+                    <a href="https://www.instagram.com/htrc_31st/" class="btn-sm">查看詳情</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 My Resume. Made with <i class="fas fa-heart" style="color:var(--primary-pink);"></i> and Bear Power.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
